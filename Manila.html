@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+header {
+    background-color: #191919;
+    color: #F2E8E8;
+    text-align:center;
+    padding:5px;
+
+}
+nav {
+    line-height:100px;
+    background-color: #191919;
+    height:1800px;
+    width:100px;
+    float: left;
+    padding:5px;
+    font-size:25px;
+    color: #f2f2f2;          
+}
+section {
+    font-family: Rockwell;
+    width:350px;
+    float:left;
+    padding:30px;          
+}
+footer {
+    background-color: #191919;
+    color:white;
+    clear:both;
+    text-align:center;
+    padding:10px;          
+}
+img {
+    height: 400px;
+    width: 600px;
+    padding: 15px;
+}
+h1 {
+    font-family: Rockwell
+    ;
+}
+body {
+    background-color: #0E2F44;
+}
+#map {
+        width: 400px;
+        height: 400px;
+        float: right;
+        padding: 5px, 1px, 1px, 1px;
+      }
+iframe {
+    float: center;
+    padding: 100px;
+}
+</style>
+</head>
+<body>
+<header>
+<h1>City Gallery</h1>
+<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/99/Flag_of_the_Philippines.svg/2000px-Flag_of_the_Philippines.svg.png" alt="Philippines Flag" style="width:100px;height:50px;">
+</header>
+<nav>
+<a href="London.html" target="_self"> London </a><br>
+Manila </br> 
+<a href="Seoul.html" target="_self"> Seoul </a> 
+</nav>
+<section>
+<h1>Manila, Philippines</h1>
+<p>Manila is the capital city of the Philippines. It is the home to extensive commerce and seats the executive and judicial branches of the Filipino government. It also contains vast amount of significant architectural and cultural landmarks in the country. Manila is one of the sixteen cities that makes up Metro Manila, the National Capital Region of the Philippines. In 2012, Globalization and World Cities Research Network listed Manila as a global city</p>
+<p>In 1571 Spanish Conquistadors arrived from Mexico, across the Pacific and founded present-day Manila in what today is Intramuros. Spanish missionaries soon Christianized the city and built some of the oldest churches in the country, including San Agustin Church. The Conquistadors renamed the area Nuevo Reino de Castilla (New Kingdom of Castille) and shortened the name to Manila.</p>
+</section>
+<aside>
+<div id="map"></div>
+    <script>
+      function initMap() {
+        var mapDiv = document.getElementById('map');
+        var map = new google.maps.Map(mapDiv, {
+          center: {lat: 14.5800, lng: 121.0000},
+          zoom: 9
+        });
+      }
+    </script>
+    <script src="https://maps.googleapis.com/maps/api/js?callback=initMap"
+        async defer></script>
+<img src="http://thefabweb.com/wp-content/uploads/2012/05/T7c71.jpg" />
+</aside>
+<span style="display: block !important; width: 0px; text-align: center; font-family: sans-serif; font-size: 12px;"><a href="http://www.wunderground.com/cgi-bin/findweather/getForecast?query=zmw:00000.1.98429&bannertypeclick=wu_travel_map1" title="Manila, Philippines Weather Forecast" target="_blank"><img src="http://weathersticker.wunderground.com/weathersticker/cgi-bin/banner/ban/wxBanner?bannertype=wu_travel_map1&airportcode=RPLL&ForcedCity=Manila&ForcedState=Philippines&wmo=98429&language=EN" alt="Find more about Weather in Manila, PH" width="100" /></a><br><a href="http://www.wunderground.com/cgi-bin/findweather/getForecast?query=zmw:00000.1.98429&bannertypeclick=wu_travel_map1" title="Get latest Weather Forecast updates" style="font-family: sans-serif; font-size: 12px" </a></span>
+<iframe width="1200" height="600" src="https://www.youtube.com/embed/UuEtqtBY_10" frameborder="0" allowfullscreen></iframe>
+
+<footer>&copy; Mr. Singer 2016
+</footer>
+</body>
+</html>
